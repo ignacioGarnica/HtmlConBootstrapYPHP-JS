@@ -11,7 +11,7 @@
 body{
     font-family: letras, sans-serif;
     overflow-x:hidden;
-    background-image: url(includes/css/images/wallpaper.jpg);
+    background-image: url(images/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -186,7 +186,7 @@ body{
     position: relative;
     color: white;
     height: 20em;
-    background-image: url(includes/css/images/footer_black.gif);
+    background-image: url(images/footer_black.gif);
 }
 
 .mensaje_centrado{
