@@ -51,7 +51,7 @@
                 <div class="container-fluid col-sm-12" id="presentacion_texto_modification">
                     <div class="mensaje_centrado ">
                         <strong>
-                            <h5 id="texto_presentacion">Modificar Comentario</h5>
+                            <h5 id="texto_presentacion">Comentario obtenidos</h5>
                         </strong>
                     </div>
                 </div>
