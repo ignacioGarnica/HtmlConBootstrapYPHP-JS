@@ -11,7 +11,7 @@ if(empty ($usuario) or empty ($password) ){
     echo' <script>alert ("Por favor, ingrese todos los datos");</script>
             <html>
             <head>
-            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP/login.html">
+            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/login.html">
             </head>
 
             </html>';
@@ -32,7 +32,7 @@ if(empty ($usuario) or empty ($password) ){
         
         echo'<html>
                 <head>
-                    <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP/busquedaygestion.php">
+                    <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/busquedaygestion.php">
                 </head>
                 </html>';
         return;
@@ -41,7 +41,7 @@ if(empty ($usuario) or empty ($password) ){
         
         echo'<html>
                 <head>                          
-                <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP/loginErroneo.html">
+                <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/loginErroneo.html">
                 </head>
                 </html>';
         return; 

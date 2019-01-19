@@ -16,6 +16,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="includes/js/ajax.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +54,7 @@
                 <div class="container-fluid col-sm-12" id="presentacion_texto_modification">
                     <div class="mensaje_centrado ">
                         <strong>
-                            <h5 id="texto_presentacion">Comentario obtenidos</h5>
+                            <h5 id="texto_presentacion">Comentarios obtenidos</h5>
                         </strong>
                     </div>
                 </div>
@@ -86,11 +89,11 @@
                                     <td>".$fila['Nombre']."</td>
                                     <td>".$fila['Rut']."</td>
 
-                                    <form action='http://localhost/HtmlConBootstrapYPHP/includes/php/eliminar.php' method='POST'>
+                                    <form action='http://localhost/HtmlConBootstrapYPHP&JS/includes/php/eliminar.php' method='POST'>
                                         <td><center><button type='submit' class='btn btn-primary'> Eliminar</button></center></td>
                                         <input name='rescateIdComentario' type='number' value=".$fila['IdComentario']." hidden> </input>
                                     </form>
-                                    <form action='http://localhost/HtmlConBootstrapYPHP/includes/php/modificar.php' id='buscarmodificar' method='post'>
+                                    <form action='http://localhost/HtmlConBootstrapYPHP&JS/includes/php/modificar.php' id='buscarmodificar' method='post'>
                                     <td><center><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#myModalmodificar'> Modificar</button></center></td>
                                         <div id='myModalmodificar' class='modal fade' role='dialog'>
                                             <div class='modal-dialog'>

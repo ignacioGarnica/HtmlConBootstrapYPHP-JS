@@ -16,6 +16,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="includes/js/ajax.js"></script>
+
 </head>
 
 <body>
@@ -62,7 +65,7 @@
         
         <section class="container-fluid" id="formulario">
             <div class="row">
-                <form action="http://localhost/HtmlConBootstrapYPHP/includes/php/guardar.php" method="post">
+                <form action="http://localhost/HtmlConBootstrapYPHP&JS/includes/php/guardar.php" method="post">
                     <div class="panel" id="orientacion_comentario_form">
                         <div class="panel-heading">Orientación de Comentario</div>
                         <div class="panel-body">
@@ -164,7 +167,7 @@
                     <div class="form-group row">
                         <center>
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#confirmacion" >Enviar Comentario</button>
+                                <button onclick="registrar();" class="btn btn-primary">Enviar Comentario</button>
                             </div>
                         </center>
                     </div>

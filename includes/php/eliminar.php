@@ -1,7 +1,7 @@
 <?php
 
     include('conexion.php');
-    header('http://localhost/HtmlConBootstrapYPHP/notificacionEliminar.php');
+    header('http://localhost/HtmlConBootstrapYPHP&JS/notificacionEliminar.php');
 
     $rescate = $_POST["rescateIdComentario"];
 
@@ -13,7 +13,7 @@
         echo '
             <html>
             <head>
-            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP/notificacionEliminar.html">
+            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/notificacionEliminar.html">
             </head>
 
             </html>';        
