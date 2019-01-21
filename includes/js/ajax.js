@@ -1,9 +1,5 @@
  
 
-
-
-
-
 function registrar(){
 
     var nombre      = $("#inputNombre").val();
@@ -31,3 +27,6 @@ function limpiar(){
     $("#inputFono").val("");
     $("#comentario").val("");
 }
+
+
+
