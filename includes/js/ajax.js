@@ -1,4 +1,22 @@
- 
+window.onload = function (){
+    cargar();    
+}
+
+ function cargar(){
+
+    /*$.ajax({
+        type: "POST",
+        dataType: "html",
+        url: "localhost/HtmlConBootstrapYPHP&JS/includes/php/listar.php",
+        data: "perro",
+        success:function(data){
+            $("#listaComentarios").html(data);
+        }
+    });*/
+
+    $('#listaComentarios').load('includes/php/listar.php');
+}
+
 
 function registrar(){
 
@@ -27,6 +45,4 @@ function limpiar(){
     $("#inputFono").val("");
     $("#comentario").val("");
 }
-
-
 
