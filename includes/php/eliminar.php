@@ -1,24 +1,11 @@
 <?php
 
     include('conexion.php');
-    header('http://localhost/HtmlConBootstrapYPHP&JS/notificacionEliminar.php');
 
-    $rescate = $_POST["rescateIdComentario"];
+    $rescate = $_GET["IdComentario"];
 
-    $eliminar=mysql_query("DELETE FROM comentario WHERE IdComentario='$rescate'");
-    $eliminar2=mysql_query("DELETE FROM clientescomentarios WHERE Comentario_RutCliente='$rescate'");
-
-
-    if ($eliminar || $eliminar2) {
-        echo '
-            <html>
-            <head>
-            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/notificacionEliminar.html">
-            </head>
-
-            </html>';        
-    }
-
+    mysql_query("DELETE FROM comentario WHERE IdComentario='$rescate'") or die('Error. '.mysql_error());
+    mysql_query("DELETE FROM clientescomentarios WHERE Comentario_RutCliente='$rescate'") or die('Error. '.mysql_error());
 
     mysql_close()
 

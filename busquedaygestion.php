@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Velvet Contratista y Proveedora de Software</title>
     <link rel="icon" type="image/png" href="includes/images/logo.png"/>
     <link rel="stylesheet" type="text/css" href="includes/css/estilosBusquedaygestion.css">
@@ -62,13 +63,17 @@
 
         <center>
         <section class="container-fluid" id="listaComentarios">
-            
+            <?php include("includes/php/listar.php")?>
         </section>
         </center>
 
     </div>
 
-    <script src="includes/js/ajax.js"></script>
+
+    <?php include("includes/php/modal_modificar.php");?>
+
+    <script type="text/javascript" src="includes/js/ajax.js"></script>
+
 </body>
 
 
