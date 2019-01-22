@@ -1,24 +1,13 @@
 <?php
 
     include('conexion.php');
-    header('http://localhost/HtmlConBootstrapYPHP&JS/notificacionModificar.php');
 
-    $rescateID = $_POST["rescate"];
-    $rescateComentario = $_POST["rescateComentario"];
+    $rescateId = $_GET["rescateId"];
+    $rescateComentario = $_GET["rescateComentario"];
 
-    $modificar=mysql_query("UPDATE comentario SET Comentario = '$rescateComentario' WHERE IdComentario='$rescateID'");
+    $modificar=mysql_query("UPDATE comentario SET Comentario = '$rescateComentario' WHERE IdComentario='$rescateId'");
 
-    if ($modificar) {
-        echo '
-            <html>
-            <head>
-            <meta http-equiv="refresh" content="0;url=http://localhost/HtmlConBootstrapYPHP&JS/notificacionModificar.html">
-            </head>
-
-            </html>';        
-    }
-
-
+    
     mysql_close()
 
 ?>

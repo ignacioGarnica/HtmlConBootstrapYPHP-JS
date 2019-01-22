@@ -35,9 +35,30 @@
                 <td ><?php echo $Rut;?></td>
                 <td><?php
                     echo "<td><button class='btn btn-primary' onclick=\"eliminarComentario('".$fila['IdComentario']."')\">Eliminar</button></td>";
-                    echo "<td><button class='btn btn-primary' id='botonModificar'>Modificar</button></td>";
+                    echo "<td><button data-toggle='modal' data-target='#modal_modificar".$IdComentario."' class='btn btn-primary' id='botonModificar'>Modificar</button></td>";
+
+                    echo "<div id='modal_modificar".$IdComentario."' class='modal' role='dialog'>
+                            <div class='modal-dialog'>
+                                                    <!-- Modal content-->
+                                <div class='modal-content'>
+                                <div class='modal-header'>
+                                    <button type='button' class='close' data-dismiss='modal'>&times;</button>
+                                    <h4 class='modal-title'>Modificar Comentario</h4>
+                                </div>
+                                <div class='modal-body'>
+                                    <label for='inputID' class='col-sm-6 col-form-label'>ID comentario</label>
+                                    <input type='number' name='inputID' value=".$fila['IdComentario']." disabled></input>
+                                    <textarea id='comentarioCajita".$IdComentario."' name='rescateComentario' rows='10' style='margin-top: 20px; width: 38em;'>".$fila['Comentario']."
+                                    </textarea>
+                                    <br><br><br>
+                                </div>
+                                <div class='modal-footer'>
+                                    <button data-dismiss='modal' class='btn' onclick=\"modificarComentario('".$fila['IdComentario']."')\" >Modificar Comentario</button>
+                                </div>
+                            </div>
+                        </div>";
+
                     ?>
-                </td>
             </tr>
         <?php 
         }

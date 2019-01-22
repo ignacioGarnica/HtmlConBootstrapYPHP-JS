@@ -45,3 +45,17 @@ function eliminarComentario(IdComentario){
    cargar();
    
 }
+
+function modificarComentario(IdComentario){
+    var rescateComentario = $("#comentarioCajita"+IdComentario).val();
+    console.log("rescateComentario")
+    ajax=objetoAjax();
+    ajax.open("GET", "includes/php/modificar.php?rescateId="+IdComentario+"&rescateComentario="+rescateComentario);
+    if (ajax.readyState==4) {
+        console.log("comentariomodificado");
+   }
+   ajax.send(null);
+
+   cargar();
+
+}

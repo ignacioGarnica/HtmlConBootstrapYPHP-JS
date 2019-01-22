@@ -70,7 +70,7 @@
     </div>
 
 
-    <?php include("includes/php/modal_modificar.php");?>
+    
 
     <script type="text/javascript" src="includes/js/ajax.js"></script>
 
