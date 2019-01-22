@@ -63,7 +63,6 @@
 
         <center>
         <section class="container-fluid" id="listaComentarios">
-            <?php include("includes/php/listar.php")?>
         </section>
         </center>
 

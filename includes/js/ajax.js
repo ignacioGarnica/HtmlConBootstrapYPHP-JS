@@ -8,9 +8,6 @@ window.onload = function (){
     $('#listaComentarios').load('includes/php/listar.php');
 }
 
-// JavaScript Document
- 
-// Función para recoger los datos de PHP según el navegador, se usa siempre.
 function objetoAjax(){
   var xmlhttp=false;
   try {
@@ -31,6 +28,8 @@ if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
 }
  
 function eliminarComentario(IdComentario){
+   
+   cargar();
 
    ajax=objetoAjax();
    
@@ -47,6 +46,9 @@ function eliminarComentario(IdComentario){
 }
 
 function modificarComentario(IdComentario){
+    
+    cargar();
+
     var rescateComentario = $("#comentarioCajita"+IdComentario).val();
     console.log("rescateComentario")
     ajax=objetoAjax();
